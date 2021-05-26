@@ -1,0 +1,786 @@
+/* Grid Lesson 1-4 */
+
+.containerlesson1-4 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+
+.containerlesson1-4 > div:nth-child(1n) {
+background-color: #96ceb4;	
+}
+
+.containerlesson1-4 > div:nth-child(3n) {
+background-color: #88d8b0;
+}
+
+.containerlesson1-4 > div:nth-child(2n) {
+    background-color: #ff6f69;
+}
+
+.containerlesson1-4 > div:nth-child(4n) {
+    background-color: #ffcc5c;
+}
+
+.containerlesson1-4 {
+  display: grid;
+  grid-template: repeat(2, 50px) / repeat(3, 1fr);
+  grid-gap: 3px;
+}
+
+/* Grid Lesson 5-6 */
+
+.containerlesson5-6 {
+  height: 50%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(50, 1fr);
+  grid-template-rows: 40px auto 40px;
+  grid-template-areas: 
+      ". h h h h h h h h h h ."
+      "m c c c c c c c c c c c"
+      ". f f f f f f f f f f .";
+}
+
+.header {
+  grid-area: h;
+}
+
+.menu {
+  grid-area: m;
+}
+
+.content {
+  grid-area: c;
+}
+
+.footer {
+  grid-area: f;
+}
+
+
+.containerlesson5-6 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+html, body {
+  box-sizing: border-box;
+  background-color: #ffeead;
+  height: 100%;
+  padding: 10px;
+  margin: 0px;
+}
+
+.containerlesson5-6 > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.containerlesson5-6 > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.containerlesson5-6 > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.containerlesson5-6 > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+/* Grid Lesson 7-8 */
+
+.containerlesson7-8 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, 100px);
+}
+.containerlesson7-8 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerlesson7-8 > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.containerlesson7-8 > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.containerlesson7-8 > div:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.containerlesson7-8 > div:nth-child(4n) {
+      background-color: #ffcc5c;
+}
+
+/* Grid Lesson 9 */
+
+.containerlesson9 {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 1;
+}
+
+.big {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.containerlesson9 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffeead;
+}
+
+.containerlesson9 > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Grid Lesson 10 */
+
+.containerlesson10 {
+  height: 100%; 
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end main-end];
+  grid-template-rows: [main-start] 40px [content-start] auto [content-end] 40px [main-end]; 
+}
+
+.headerlesson10 {
+  grid-column: main;
+}
+
+.menulesson10 {
+  grid-column: auto;
+}
+
+.contentlesson10 {
+  grid-area: content;
+}
+
+.footerlesson10 {
+  grid-column: main;
+}
+
+.containerlesson10 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerlesson10 > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.containerlesson10 > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.containerlesson10 > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.containerlesson10 > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+/* Grid Lesson 11 */
+
+.containerlesson11-12 {
+  border: 6px solid black;
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(3, 200px);
+  justify-content: space-around;
+ align-content: center;
+}
+
+.containerlesson11-12 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerlesson11-12 > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.containerlesson11-12 > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.containerlesson11-12 > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.containerlesson11-12 > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+/* Grid Lesson 13 */
+
+.containerlesson13 {
+  border: 6px solid black;
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 100px 100px;
+}
+
+.containerlesson13-1 {
+  border: 6px solid black;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: 100px 100px;
+}
+
+.containerlesson13 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerlesson13 > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.containerlesson13 > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.containerlesson13 > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.containerlesson13 > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+.containerlesson13-1 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerlesson13-1 > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.containerlesson13-1 > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.containerlesson13-1 > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.containerlesson13-1 > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+/* Grid Lesson 14 */
+
+.h2lesson14{
+  color:#ff0000;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif
+}
+
+.textlesson14{
+  font-size: large;
+  font-weight: 600;
+}
+
+/* Grid Lesson 15-16 */
+
+.flexbox-headerlesson15-16 {
+  display: flex; 
+  
+}
+
+.flexbox-headerlesson15-16 > div:nth-child(3) {
+  margin-left: auto;
+}
+
+.grid-pagelesson15-16 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 200px 40px;
+}
+
+.headerlesson15-16 {
+  grid-column: 1 / -1;
+  display: flex;
+}
+
+.headerlesson15-16 > div:nth-child(3) {
+  margin-left: auto;
+}
+
+.menulesson15-16 {
+  grid-column: 1 / 2;
+}
+
+.contentlesson15-16 {
+  grid-column: 2 / -1;
+}
+
+.footerlesson15-16 {
+  grid-column: 1 / -1;
+}
+
+
+.p {
+  color: #111312;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.FlexP{
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.flexbox-headerlesson15-16 > div {
+  display: flex;
+  font-size: 1em;
+  padding: 10px 20px;
+}
+
+.flexbox-headerlesson15-16 {
+  background-color: #96ceb4;
+  color: #131005;
+}
+
+
+.headerlesson15-16 {
+    background-color: #96ceb4;	
+}
+
+.headerlesson15-16 :nth-child(2) {
+    padding: 0 40px;
+}
+
+.menulesson15-16 {
+    background-color: #ff6f69;
+}
+
+.contentlesson15-16 {
+    background-color: #ffcc5c;
+}
+
+.footerlesson15-16 {
+    background-color: #88d8b0;
+}
+
+.grid-pagelesson15-16 > div {
+    color: #090802;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+/* Flexbox Lesson 1-3 */
+
+.containerFlexbox1-3 {
+  border: 5px solid #5f6364;
+  display: flex;
+  flex-direction: row;
+}
+
+.containerFlexbox1-3 > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerFlexbox1-3 > div:nth-child(1) {
+  background-color: #e0b6e0;	
+}
+
+.containerFlexbox1-3 > div:nth-child(2) {
+  background-color: #da726f;
+}
+
+.containerFlexbox1-3 > div:nth-child(3) {
+  background-color: #329fa7;
+}
+
+/* Flexbox Lesson 4 */
+
+.containerFlexbox4 {
+  border: 5px solid #5f6364;
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerFlexbox4 > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerFlexbox4 > div:nth-child(1) {
+  background-color: #e0b6e0;		
+}
+
+.containerFlexbox4 > div:nth-child(2) {
+  background-color: #da726f;
+}
+
+.containerFlexbox4 > div:nth-child(3) {
+  background-color:  #329fa7;
+}
+
+/* Flexbox Lesson 5 */
+
+.containerFlexbox5 {
+  border: 5px solid #5f6364;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home5 {
+  margin-right: auto;
+}
+
+.containerFlexbox5 > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerFlexbox5 > div:nth-child(1n) {
+  background-color: #e0b6e0;		
+}
+
+.containerFlexbox5 > div:nth-child(3n) {
+  background-color: #da726f;
+}
+
+.containerFlexbox5 > div:nth-child(2n) {
+  background-color: #329fa7;
+}
+
+/* Flexbox Lesson 6 */
+
+.containerFlexbox6 {
+  border: 5px solid #5f6364;
+  display: flex;
+}
+
+.home6 {
+  flex: 1;
+}
+
+.logout6 {
+  flex: 1;
+}
+
+.container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerFlexbox6 > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerFlexbox6 > div:nth-child(1n) {
+  background-color: #e0b6e0;		
+}
+
+.containerFlexbox6 > div:nth-child(3n) {
+  background-color: #da726f;
+}
+
+.containerFlexbox6 > div:nth-child(2n) {
+  background-color: #329fa7;
+}
+
+/* Flexbox Lesson 7 */
+
+.containerFlexbox7 {
+  border: 5px solid #5f6364;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  height: 40%;
+  padding: 10px;
+  background-color: #fdea9e;
+  margin: 0;
+}
+
+.logout7 {
+  align-self: flex-start;
+}
+
+.home7 {
+  align-self: flex-end;
+}
+
+.containerFlexbox7 > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerFlexbox7 > div:nth-child(1n) {
+  background-color: #e0b6e0;		
+}
+
+.containerFlexbox7 > div:nth-child(3n) {
+  background-color: #da726f;
+}
+
+.containerFlexbox7 > div:nth-child(2n) {
+  background-color: #329fa7;
+}
+
+/* Flexbox Lesson 8 */
+
+.containerFlexbox8 {
+  border: 5px solid #5f6364;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50%;
+  align-items: flex-end;
+}
+
+
+.containerFlexbox8 > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerFlexbox8 > div:nth-child(1n) {
+  background-color: #e0b6e0;		
+}
+
+.containerFlexbox8 > div:nth-child(3n) {
+  background-color: #da726f;
+}
+
+.containerFlexbox8> div:nth-child(2n) {
+  background-color: #329fa7;
+}
+
+/* Lesson 9 */
+
+.containerFlexbox9 {
+  border: 5px solid #5f6364;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerFlexbox9 > div {
+  width: 300px;
+}
+
+.containerFlexbox9 > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerFlexbox9 > div:nth-child(1n) {
+  background-color: #e0b6e0;		
+}
+
+.containerFlexbox9 > div:nth-child(3n) {
+  background-color: #da726f;
+}
+
+.containerFlexbox9> div:nth-child(2n) {
+  background-color: #329fa7;
+}
+
+/* Flexbox Lesson 10-11 */
+
+.containerFlexbox10-11 {
+  border: 5px solid  #5f6364;
+  display: flex;
+}
+
+.item1Flexbox {
+  order: 1;
+}
+
+.item2Flexbox {
+  order: 0;
+}
+
+.item3Flexbox {
+  order: -1;
+}
+
+.containerFlexbox10-11 > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.containerFlexbox10-11 > div:nth-child(1n) {
+  background-color: #e0b6e0;		
+}
+
+.containerFlexbox10-11 > div:nth-child(3n) {
+  background-color: #da726f;
+}
+
+.containerFlexbox10-11> div:nth-child(2n) {
+  background-color: #329fa7;
+}
+
+/* Flexbox Lesson 12 */
+
+.containerFlexbox12 {
+  border: 5px solid  #5f6364;
+  display: flex;
+}
+
+.searchFlexbox {
+  flex: 1;
+}
+
+@media all and (max-width: 600px) {
+  .containerFlexbox12 {
+    flex-wrap: wrap;
+  }
+  .containerFlexbox12 > li {
+    flex: 1 1 50%;
+  }
+  
+  .searchFlexbox > input {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .containerFlexbox12 > li {
+    flex: 1 1 100%;
+  }
+  .searchFlexbox {
+    order: 1;
+  }
+}
+
+.containerFlexbox12 > li {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+  box-sizing: border-box;
+  background-color: #96ceb4;
+  list-style-type: none;
+}
+
+.containerFlexbox12 {
+  padding: 0;
+}
+.search-inputFlexbox {
+  background: #ff6e68;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #ffeead;
+  color: #ffeead;
+}
+::placeholder{
+  color: #ffeead;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.containerFlexbox12 > li {
+  background-color: #96ceb4;
+}
+
+
+/* Flexbox Lesson 13-14 */
+
+
+.containerFlexbox13-14 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerFlexbox13-14 > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerFlexbox13-14 > .normal {
+  flex: 1 1 150px;
+}
+
+.containerFlexbox13-14 > .big {
+  flex: 1 1 250px;
+}
+
+
+
+
+
+
+
+
+
